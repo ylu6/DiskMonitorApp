@@ -9,5 +9,5 @@ import org.ylu.diskmonitorwebapp.domain.UsageHistory;
 public interface UsageHistoryMapper {
     UsageHistoryMapper INSTANCE = Mappers.getMapper(UsageHistoryMapper.class);
 
-    UsageHistoryDTO usageHistoryToUsageHistoryDTO(UsageHistory usageHistory);
+    UsageHistory usageHistoryDTOToUsageHistory(UsageHistoryDTO usageHistoryDTO);
 }

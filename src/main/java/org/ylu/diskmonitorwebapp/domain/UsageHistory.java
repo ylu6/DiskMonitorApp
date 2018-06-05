@@ -19,20 +19,20 @@ public class UsageHistory {
     @Temporal(TemporalType.TIMESTAMP)
     private Date dateTime;
 
-    @ManyToOne
-    @JoinColumn(name="disk_ID")
-    private Disk disk;
+    private Long diskId;
 
-    @ManyToOne
-    @JoinColumn(name="user_ID")
-    private User user;
+    private Long userId;
 
     private Float used;
 
-    public UsageHistory(Date dateTime, Disk disk, User user, Float used) {
+    public UsageHistory() {
+    }
+
+    public UsageHistory(Date dateTime, Long diskId, Long userId, Float used) {
+
         this.dateTime = dateTime;
-        this.disk = disk;
-        this.user = user;
+        this.diskId = diskId;
+        this.userId = userId;
         this.used = used;
     }
 }
