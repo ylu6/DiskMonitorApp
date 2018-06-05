@@ -25,14 +25,13 @@ public class UsageHistory {
 
     private Float used;
 
-    public UsageHistory() {
-    }
-
     public UsageHistory(Date dateTime, Long diskId, Long userId, Float used) {
-
         this.dateTime = dateTime;
         this.diskId = diskId;
         this.userId = userId;
         this.used = used;
+    }
+
+    public UsageHistory() {
     }
 }
