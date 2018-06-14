@@ -21,11 +21,11 @@ public class UsageHistory {
 
     private Long diskId;
 
-    private Long userId;
+    private String userId;
 
     private Float used;
 
-    public UsageHistory(Date dateTime, Long diskId, Long userId, Float used) {
+    public UsageHistory(Date dateTime, Long diskId, String userId, Float used) {
         this.dateTime = dateTime;
         this.diskId = diskId;
         this.userId = userId;

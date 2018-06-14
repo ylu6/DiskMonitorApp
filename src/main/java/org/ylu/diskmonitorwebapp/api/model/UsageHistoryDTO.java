@@ -18,7 +18,7 @@ public class UsageHistoryDTO {
 
     private Long diskId;
 
-    private Long userId;
+    private String userId;
 
     private Float used;
 }
