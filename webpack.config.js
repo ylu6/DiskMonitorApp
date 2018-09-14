@@ -3,7 +3,7 @@ var webpack = require('webpack');
 
 module.exports = {
     // entry: './src/main/js/app.js',
-    entry: './src/main/js/diskapp.js',
+    entry: './src/main/js/index.js',
     devtool: 'sourcemaps',
     cache: true,
     debug: true,

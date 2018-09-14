@@ -1,10 +1,11 @@
 package org.ylu.diskmonitorwebapp.api.model;
 
-public class UserDTO {
-    private Long id;
+import lombok.Data;
 
+@Data
+public class UserDTO {
     private String firstName;
     private String lastName;
     private String email;
-    private String snps_id;
+    private String id;
 }

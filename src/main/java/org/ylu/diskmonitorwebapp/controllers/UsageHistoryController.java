@@ -24,6 +24,7 @@ public class UsageHistoryController {
     @ResponseStatus(HttpStatus.OK)
     public String insertUsageHistories(@RequestBody List<UsageHistoryDTO> usageHistoryDTOs) {
         usageHistoryService.insertAllUsageHistory(usageHistoryDTOs);
+        System.out.println(usageHistoryDTOs.get(0).getDateTime());
         return "Disk Usage History Successfully Inserted.";
     }
 

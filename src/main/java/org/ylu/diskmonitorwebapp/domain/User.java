@@ -3,10 +3,7 @@ package org.ylu.diskmonitorwebapp.domain;
 import lombok.Getter;
 import lombok.Setter;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Getter
 @Setter
@@ -14,6 +11,7 @@ import javax.persistence.Id;
 public class User {
 
     @Id
+    @Column(name = "ID",unique=true, nullable = false, columnDefinition="VARCHAR(32)")
     private String id;
 
     private String firstName;

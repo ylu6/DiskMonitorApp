@@ -12,4 +12,10 @@ public class IndexController {
 
         return "index.html";
     }
+
+    @RequestMapping({"/disks"})
+    public String getDisksPage(Model model) {
+
+        return "disks.html";
+    }
 }
